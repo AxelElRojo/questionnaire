@@ -25,8 +25,8 @@ The basic syntax is the following:
 This file contains the questionnaire you want for your course. You can find an example under `public/example/`.
 ### The Base64
 This is just the representation of the JSON file's URL, make sure it includes the "http://" at the beginning, like this:
-Original: https://raw.githubusercontent.com/AxelElRojo/questionnaire/gh-pages/example/unix_en.json
-Encoded: aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0F4ZWxFbFJvam8vcXVlc3Rpb25uYWlyZS9naC1wYWdlcy9leGFtcGxlL3VuaXhfZW4uanNvbg
+- Original: https://raw.githubusercontent.com/AxelElRojo/questionnaire/gh-pages/example/unix_en.json
+- Encoded: aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0F4ZWxFbFJvam8vcXVlc3Rpb25uYWlyZS9naC1wYWdlcy9leGFtcGxlL3VuaXhfZW4uanNvbg
 ### Linking to the JSON
 The URL is encoded in Base64 and appended as a query parameter, under the name "url", the JSON is then loaded via Ajax. There is virtually no error handling, if something goes wrong, the app will only show a generic error message.
 ### Example
