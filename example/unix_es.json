@@ -1,0 +1,21 @@
+{
+	"title" : "Historia de UNIX",
+	"lang" : "es",
+	"questions" : [
+		{
+			"title" : "Lenguaje de programación inventado en los 70s para reescribir UNIX",
+			"type" : "radio",
+			"correct" : "C",
+			"options" : [
+				"C",
+				"C++",
+				"C#"
+			]
+		},
+		{
+			"title" : "Kernel creado por Linus Torvalds y posteriormente integrado en el sistema operativo GNU",
+			"type" : "open",
+			"correct" : "Linux"
+		}
+	]
+}
