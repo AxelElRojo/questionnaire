@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { Questionnaire } from "./components/Questionnaire"
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const queryParams = new URLSearchParams(window.location.search);
+	const url = window.atob(queryParams.get('url'));
+	return (
+		<div className="container d-flex justify-content-center">
+			{window.location.search && <Questionnaire url={url}/>}
+			{!window.location.search &&
+				<div className="alert alert-danger mt-5 w-75" role="alert">
+					<h4 className="mb-3 alert-heading">Error</h4>
+					<hr/>
+					Missing code
+					<br/>
+					Código faltante
+				</div>
+			}
+		</div>
+	);
 }
 
 export default App;
